@@ -1,16 +1,70 @@
-# React + Vite
+# Digital Store 🛍️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto de e-commerce desenvolvido com React como projeto final do curso de Fullstack da Geração Tech, com base no layout disponibilizado no Figma.
 
-Currently, two official plugins are available:
+## 💻 Sobre o projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+A Digital Store é uma aplicação web de comércio eletrônico desenvolvida para praticar conceitos de desenvolvimento Front-end, componentização, navegação entre páginas e gerenciamento de estados com React.
 
-## React Compiler
+## 🚀 Tecnologias utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- JavaScript
+- JSX
+- CSS3
+- React Router DOM
+- Vite
 
-## Expanding the ESLint configuration
+## ✨ Funcionalidades
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Página inicial
+- Listagem de produtos
+- Visualização dos detalhes dos produtos
+- Navegação entre páginas
+- Filtragem de produtos por categoria e preço
+- Ordenação de produtos
+- Seleção de opções dos produtos
+- Adição de produtos ao carrinho
+- Visualização dos produtos adicionados ao carrinho
+- Opção de esvaziar o carrinho
+- Acesso ao carrinho para prosseguir com a finalização da compra
+- Visualização dos pedidos e seus respectivos status
+- Visualização das informações do usuário
+
+## ⚙️ Como executar o projeto
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/emillyaristides/Digital-Store.git
+```
+
+Entre na pasta:
+
+```bash
+cd Digital-Store
+```
+
+Instale as dependências:
+
+```bash
+npm install
+```
+
+Inicie o projeto:
+
+```bash
+npm run dev
+```
+
+## 👩‍💻 Desenvolvedora
+
+**Emilly Aristides**
+
+Estudante de Análise e Desenvolvimento de Sistemas (ADS), interessada em desenvolvimento Front-end ou FullStack e criação de soluções digitais.
+
+[Meu GitHub](https://github.com/emillyaristides)
+
+---
+
+Projeto desenvolvido para fins educacionais.
