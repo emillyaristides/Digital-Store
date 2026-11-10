@@ -1,0 +1,324 @@
+.pv-page {
+  padding: 24px 8% 64px;
+  background-color: #f7f6fc;
+  color: #474747;
+}
+
+/* Breadcrumb */
+.pv-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+  font-size: 12px;
+  color: #474747;
+}
+
+.pv-breadcrumb a {
+  color: #474747;
+  text-decoration: none;
+}
+
+.pv-breadcrumb a:hover {
+  color: #c92071;
+}
+
+.pv-breadcrumb-current {
+  color: #1f1f1f;
+}
+
+/* Bloco principal: galeria + informações */
+.pv-main {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto 64px;
+}
+
+/* Galeria */
+.pv-gallery-main {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1.23 / 1;
+  border-radius: 4px;
+}
+
+.pv-gallery-main img {
+  display: block;
+  width: 78%;
+  height: auto;
+  max-height: 80%;
+  object-fit: contain;
+}
+
+.pv-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border: 0;
+  background: transparent;
+  color: #474747;
+  cursor: pointer;
+}
+
+.pv-arrow-left {
+  left: 8px;
+}
+
+.pv-arrow-right {
+  right: 8px;
+}
+
+.pv-thumbs {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.pv-thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1.2 / 1;
+  padding: 0;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pv-thumb img {
+  display: block;
+  width: 85%;
+  height: auto;
+}
+
+.pv-thumb.active {
+  border-color: #c92071;
+}
+
+/* Informações */
+.pv-info h1 {
+  margin: 0 0 8px;
+  color: #1f1f1f;
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.pv-meta {
+  margin: 0 0 12px;
+  font-size: 12px;
+  color: #474747;
+}
+
+.pv-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+.pv-stars {
+  color: #ffb31f;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.pv-rating-badge {
+  padding: 3px 8px;
+  border-radius: 4px;
+  background: #ffb31f;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.pv-reviews {
+  color: #474747;
+}
+
+.pv-price {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+  margin-bottom: 20px;
+  color: #1f1f1f;
+}
+
+.pv-currency {
+  margin-right: 4px;
+  font-size: 14px;
+}
+
+.pv-price strong {
+  font-size: 32px;
+}
+
+.pv-cents {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.pv-old-price {
+  margin-left: 12px;
+  color: #b0b0b0;
+  font-size: 16px;
+}
+
+.pv-label {
+  margin: 0 0 8px;
+  color: #8f8f8f;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.pv-description {
+  margin: 0 0 24px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* Tamanhos */
+.pv-sizes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.pv-size {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  background: #ffffff;
+  color: #474747;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.pv-size.active {
+  border-color: #c92071;
+  background: #c92071;
+  color: #ffffff;
+}
+
+/* Cores */
+.pv-colors {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.pv-color {
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* anel ao redor da cor selecionada (usa a própria cor do botão) */
+.pv-color.active {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
+/* Botão comprar */
+.pv-buy-button {
+  padding: 14px 48px;
+  border: 0;
+  border-radius: 4px;
+  background: #ffb31f;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+.pv-buy-button:hover {
+  background: #e6a01a;
+}
+
+/* Produtos relacionados */
+.pv-related {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pv-related-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.pv-related-heading h2 {
+  margin: 0;
+  color: #474747;
+  font-size: 20px;
+}
+
+.pv-related-heading a {
+  color: #c92071;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.pv-related .pv-related-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px 24px;
+}
+
+/* o card preenche a coluna, sem a largura fixa do ProductCard.css */
+.pv-related .pv-related-grid .product-card-link {
+  width: 100% !important;
+  max-width: none !important;
+}
+
+/* Tablet */
+@media (max-width: 1000px) {
+  .pv-related .pv-related-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 16px;
+  }
+}
+
+/* Celular */
+@media (max-width: 700px) {
+  .pv-page {
+    padding: 16px 6% 48px;
+  }
+
+  .pv-main {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+
+  .pv-info h1 {
+    font-size: 24px;
+  }
+
+  .pv-thumbs {
+    gap: 8px;
+  }
+
+  .pv-related .pv-related-grid {
+    gap: 24px 16px;
+  }
+}

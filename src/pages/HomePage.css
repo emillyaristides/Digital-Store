@@ -1,0 +1,427 @@
+
+/* Página inicial */
+.home-page {
+  color: #474747;
+  background-color: #f7f6fc;
+}
+
+/* Banner principal */
+.home-banner {
+  position: relative;
+  min-height: 520px;
+  padding: 48px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+  overflow: hidden;
+  background: #f5f5f5;
+}
+
+.banner-content {
+  flex: 0 0 40%;
+  max-width: 480px;
+  position: relative;
+  z-index: 1;
+}
+
+.banner-label {
+  color: #c92071;
+  font-weight: 700;
+}
+
+.banner-content h1 {
+  margin: 20px 0;
+  color: #1f1f1f;
+  font-size: clamp(36px, 4vw, 56px);
+  line-height: 1.1;
+}
+
+.banner-content p {
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.banner-button {
+  display: inline-block;
+  padding: 14px 36px;
+  background: #c92071;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* Imagem do tênis no banner */
+.banner-image {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  z-index: 1;
+}
+
+.banner-image img {
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  height: 460px;
+  object-fit: contain;
+}
+.banner-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 2;
+}
+
+.banner-dot {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: #c8c8c8;
+  cursor: pointer;
+}
+
+.banner-dot.active {
+  background: #c92071;
+}
+
+/* Título dos banners promocionais */
+.home-promotions-section {
+  padding: 32px 8% 0;
+}
+
+.home-promotions-section h2 {
+  margin: 0;
+  color: #1f1f1f;
+  font-size: 24px;
+}
+
+/* Banners promocionais */
+.home-promotions {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  padding: 32px 8%;
+}
+
+.promotion-card {
+  position: relative;
+  min-height: 180px;
+  padding: 24px;
+  overflow: hidden;
+  border-radius: 4px;
+  background: #dbe5f3;
+}
+
+.promotion-discount {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 20px;
+  background: #e7ff69;
+  color: #474747;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.promotion-card h3 {
+  position: relative;
+  z-index: 1;
+  max-width: 180px;
+  margin: 18px 0;
+  color: #1f1f1f;
+  font-size: 24px;
+  padding: 0 4px;
+}
+
+.promotion-card a {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  padding: 9px 22px;
+  border-radius: 4px;
+  background: #ffffff;
+  color: #c92071;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.promotion-image {
+  position: absolute;
+  right: -35px;
+  bottom: -8px;
+  width: 55%;
+  height: 100%;
+}
+
+.promotion-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Coleções em destaque */
+.home-collections {
+  padding: 48px 8%;
+}
+
+.home-collections h2 {
+  color: #1f1f1f;
+  font-size: 20px;
+  text-align: center;
+}
+
+.collection-list {
+  display: grid;
+  grid-template-columns: repeat(5, 130px);
+  justify-content: center;
+  gap: 0;
+  margin-top: 24px;
+}
+
+.collection-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 0;
+  text-align: center;
+  background: transparent;
+}
+
+.collection-card img {
+  display: block;
+  width: 92px;
+  height: 92px;
+  padding: 20px;
+  box-sizing: border-box;
+  object-fit: contain;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 8%);
+}
+
+.collection-card h3 {
+  margin: 0;
+  color: #474747;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* Lista de produtos */
+.home-products {
+  padding: 48px 6%;
+}
+
+.home-products h2 {
+  margin: 0;
+  color: #1f1f1f;
+  font-size: 24px;
+}
+
+.products-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.products-heading a {
+  color: #c92071;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px 0px;
+}
+/* Links das categorias */
+.collection-card a {
+  color: #c92071;
+  text-decoration: none;
+}
+
+/* Oferta especial */
+.home-special-offer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 64px 8%;
+  background: #ffffff;
+}
+
+.special-offer-image {
+  position: relative;
+  flex: 0 1 520px;
+  min-width: 0;
+  min-height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.special-offer-decoration {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 450px;
+  height: 100%;
+  max-height: 450px;
+  object-fit: contain;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.special-offer-shoe {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 115%;
+  max-width: 560px;
+  height: 450px;
+  object-fit: contain;
+}
+
+.special-offer-content {
+  flex: 0 1 420px;
+  min-width: 0;
+}
+
+.special-offer-content span {
+  display: block;
+  margin-bottom: 8px;
+  color: #c92071;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.special-offer-content h2 {
+  margin: 12px 0;
+  color: #474747;
+  font-size: clamp(32px, 3.2vw, 42px);
+  line-height: 1.15;
+}
+
+.special-offer-content p {
+  margin: 0 0 24px;
+  color: #474747;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.special-offer-button {
+  display: inline-block;
+  padding: 14px 32px;
+  border-radius: 4px;
+  background: #c92071;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 700px) {
+  .home-banner {
+    min-height: 340px;
+    padding: 32px 6%;
+    gap: 12px;
+  }
+
+  .banner-content h1 {
+    font-size: clamp(28px, 7vw, 38px);
+  }
+
+  .banner-image img {
+    height: 240px;
+  }
+  .banner-content {
+    flex: 1;
+  }
+
+  .banner-image {
+    justify-content: center;
+  }
+  
+
+  .home-promotions-section {
+    padding: 24px 6% 0;
+  }
+
+  .home-promotions {
+    grid-template-columns: 1fr;
+    padding: 24px 6%;
+  }
+
+  .home-collections,
+  .home-products {
+    padding: 32px 6%;
+  }
+
+  .collection-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px 16px;
+    margin-top: 24px;
+  }
+
+  .home-special-offer {
+    flex-direction: column;
+    gap: 16px;
+    padding: 40px 6%;
+    text-align: center;
+  }
+
+  .special-offer-image {
+    flex: none;
+    width: 100%;
+    min-height: 300px;
+  }
+
+  .special-offer-decoration {
+    max-height: 300px;
+  }
+
+  .special-offer-shoe {
+    width: 100%;
+    max-width: 420px;
+    height: 300px;
+  }
+
+  .special-offer-content {
+    flex: none;
+    width: 100%;
+    max-width: 450px;
+  }
+}
+
+/* Ícone alternativo da categoria */
+.collection-icon-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 8%);
+  font-size: 38px;
+}

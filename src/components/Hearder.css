@@ -1,0 +1,200 @@
+/* No desktop, os itens do celular ficam escondidos */
+.header-menu-toggle,
+.header-search-toggle,
+.mobile-overlay,
+.mobile-menu {
+  display: none;
+}
+
+/* Celular */
+@media (max-width: 700px) {
+  .header .header-top {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 12px 5%;
+  }
+
+  /* hambúrguer à esquerda */
+  .header .header-menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    border: 0;
+    background: transparent;
+    color: #474747;
+    cursor: pointer;
+  }
+
+  /* logo centralizada */
+  .header .header-logo {
+    margin: 0 auto;
+  }
+
+  .header .header-logo img {
+    display: block;
+    width: auto;
+    height: 24px;
+  }
+
+  /* lupa */
+  .header .header-search-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    border: 0;
+    background: transparent;
+    color: #474747;
+    cursor: pointer;
+  }
+
+  /* a busca só aparece quando a lupa é tocada */
+  .header .search-form {
+    display: none;
+  }
+
+  .header.search-open .search-form {
+    display: flex;
+    order: 10;
+    width: 100%;
+  }
+
+  .header.search-open .search-form input {
+    flex: 1;
+    min-width: 0;
+  }
+
+  /* some "Cadastre-se", "Entrar" e o menu horizontal */
+  .header .header-signup,
+  .header .header-login,
+  .header .header-nav {
+    display: none;
+  }
+
+  .header .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  /* número rosa no carrinho */
+  .header .cart-link {
+    position: relative;
+  }
+
+  .header .cart-link span {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #c92071;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 700;
+  }
+
+  /* fundo escuro */
+  .mobile-overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 1100;
+    background: rgb(0 0 0 / 50%);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+  }
+
+  .mobile-overlay.open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  /* painel que abre pela esquerda */
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1101;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 340px;
+    padding: 32px 24px;
+    box-sizing: border-box;
+    background: #ffffff;
+    transform: translateX(-100%);
+    transition: transform 0.25s ease;
+  }
+
+  .mobile-menu.open {
+    transform: translateX(0);
+  }
+
+  .mobile-menu-title {
+    margin: 0 0 16px;
+    color: #474747;
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  .mobile-menu-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .mobile-menu-nav a {
+    color: #474747;
+    font-size: 14px;
+    text-decoration: none;
+  }
+
+  /* página atual: rosa e sublinhada */
+  .mobile-menu-nav a.active {
+    color: #c92071;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+
+  /* Entrar + Cadastre-se na parte de baixo */
+  .mobile-menu-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-top: auto;
+    padding-top: 16px;
+    border-top: 1px solid #cccccc;
+  }
+
+  .mobile-menu-login {
+    width: 100%;
+    padding: 12px;
+    border: 0;
+    border-radius: 4px;
+    background: #c92071;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  .mobile-menu-signup {
+    color: #474747;
+    font-size: 14px;
+    text-decoration: underline;
+  }
+}
